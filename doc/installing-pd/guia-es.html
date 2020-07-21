@@ -1,0 +1,162 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+
+
+<meta content="text/html; charset=utf-8" http-equiv="content-type"><title>Guia</title>
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+
+</head>
+
+<body>
+
+<div id="tuto"><div id="bla">
+
+<p><a href="../vrrl-es.html"><button>volver</button></a></p>
+
+<h1>Instalar Pd y AOO.</h1>
+
+<br>
+<br>
+<p>
+
+
+
+
+<h4>Conseguir Pd</h4>
+
+
+
+<p>Pure-Data es software libre (y codigo abierto) y se puede instalar en Windows, macOS y Linux.
+</p><br><br>
+
+<h4>Windows:</h4> 
+<p>Descargar <code>Installer for Microsoft Windows, 64 bit executable</code> desde <a href="http://puredata.info/downloads/pure-data" target="_blank">http://puredata.info/downloads/pure-data.</a>
+<br><br> 
+Ejecutar el instalador.<br> <br> 
+Cuando este listo iniciar Pd.<br><br> 
+En el primer inicio el firewall pedira permisos. Permitir accesos en redes Privadas y Publicas.<br><br>
+<img src="firewall.png"> </br></br>
+En el primer inicio Pd le preguntura si quiere crear la carpeta documents/pd. Aceptar. <br><br>
+Ir a <a href=#ps>pruebas de sonido</a> <br><br> 
+Ir a <a href=#aoo>conseguir aoo</a><br><br> 
+<br></p>
+<h4>macOS:</h4> 
+<p>Descaragar <code>Intel/64bit</code> desde <a href="http://puredata.info/downloads/pure-data" target="_blank">http://puredata.info/downloads/pure-data.</a><br></br>
+Inicialo.<br><br>
+En el primer inicio Pd le preguntura si quiere crear la carpeta documents/pd. Aceptar. <br><br>
+
+Ir a <a href=#ps>pruebas de sonido</a> <br><br> 
+Ir a <a href=#aoo>conseguir aoo</a><br><br>
+<br></p>
+<h4>Linux:</h4><p> Descargar <code>Source tarball</code> desde <a href="http://puredata.info/downloads/pure-data" target="_blank">http://puredata.info/downloads/pure-data.</a> 
+<br>
+<br>
+Abra una terminal e instale dependencias:<br>
+Tipee:<br><br>
+<code>sudo apt-get install libasound2-dev tcl tk</code><br><br>
+Cuando termine cierre la terminal. <br><br>
+Descomprima el paquete Pd descargado.
+Entre en la carpeta “src”. Abra la terminal en esta carpeta.<br>
+Tipee para comenzar la compilacion:<br><br>
+<code>make -f makefile.gnu</code><br><br>
+Cuando termine hacer <code>cd ../bin</code> <br><br>
+Despues <code>./pd</code><br><br>
+En el primer inicio Pd le preguntura si quiere crear la carpeta documents/pd. Aceptar. <br><br>
+
+Ir a <a href=#ps>pruebas de sonido</a> <br><br> 
+Ir a <a href=#aoo>conseguir aoo</a><br><br>
+</p>
+
+<br><br><br><br><br><br><br><br>
+<a id=ps></a><h4>Pruebas de sonido.</h4>
+
+
+<p>Ajuste el volumen de su computadora a un nivel bajo (ud. seguramente esta familiarizado con el o los controles de volumen de su computadora y parlantes) generalmente un botón con forma de parlante cerca del reloj. Aquí algunas imágenes de mac, windows y linux:<br></p>
+<br><br>
+<div style="text-align: center;"><img src="v2.jpg"><br></div>
+<br><br>
+<p>Iniciar Pd e ir al menu <b>Media / Test Audio and MIDI...</b></p>
+<br><br>
+<div style="text-align: center;"><img  src="t1.jpg"></div>
+<br><br>
+<div style="text-align: center;">
+<h4>
+
+Aleje los auriculares de sus oídos!!!<br>
+Sáquese los audífonos!!!<br><br>
+Aleje los auriculares de sus oídos!!!<br>
+Sáquese los audífonos!!!<br><br>
+Aleje los auriculares de sus oídos!!!<br>
+Sáquese los audífonos!!!<br><br>
+
+<br>
+</h4>
+<br></div>
+
+
+
+<div style="text-align: center;"><img alt="" src="t2.jpg"></div>
+<br>
+<br>
+
+
+<p>Presione el botón “80” (en la ventana “testtone.pd”) y suavemente incremente el volumen de su computadora hasta que escuche claramente un tono constante similar al del teléfono antes de marcar. (si usa auriculares acérquelos a sus oídos lentamente hasta su posición normal, insisto, con  precaución.) </p>
+
+<p>
+Seguramente con esta prueba escucho el tono y ya sabe como debe controlar el volumen cuando use vrrl. Puede cerrar la ventana “testtone.pd”.</p><br>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+<h4>Ajustes de latencia:</h4>
+<br>
+<p>Va a necesitar la latencia mas baja posible en su sistema. Cerca de 8ms es posible en la mayoria de los sistemas. </p>
+<p>Ir al menu <b> Media / Audio settings.</b> y cambiar <b>Delay (msec)</b> a <b>8.</b> </p>
+
+<p>
+Si tiene mas de una placa de sonido seleccione cual usar con Pd.</p>
+
+<p>Puede checkear si el audio funciona bien llendo de nuevo a <b>Media / Test Audio and MIDI...</b></p>
+<br>
+<h4>para Windows:</h4>
+<p>Seguramente necesitas usar el driver ASIO. Ir al menu <b> Media / ASIO (via portaudio).</b><br></p><br>
+<div style="text-align: center;"><img  src="t3.jpg"></div>
+<br><p>
+Cambia el delay a 8ms,  block size a 64 y selecciona el driver ASIO de tu placa. Preciona el boton "Save All Settings".<br></p>
+
+<p>Puede checkear si el audio funciona bien llendo de nuevo a <b>Media / Test Audio and MIDI...</b></p>
+<p>Nota: Puede usar <a href="http://www.asio4all.org/" target="_blank">http://www.asio4all.org/</a> con su placa de sonido interna.</p>
+<p>
+En algunas versiones de windows como “Starter” o “Home basic” posiblemente NO ESCUCHE el tono de prueba o encuentre otros inconvenientes. Antes de desistir pruebe iniciar el Pd en el modo “Ejecutar como Administrador”. Para esto haga click-derecho en el icono del programa e inicie con el menu <b>“Ejecutar como Administrador” </b>
+
+</p>
+<br><br><br><br>
+
+<a id=aoo></a><h4>Conseguir AOO</h4>
+
+<p>Ir al menu <b>Help / Find externals</b></p>
+<img src="deken1.png"></br>
+<img src="deken2.png"></br>
+<ul>
+<li><p><b>A:</b> Tipee "aoo".</p></li>
+<li><p><b>B:</b> click en el boton "Search".</p></li>
+<li><p><b>C:</b> click en la ultima version disponible de AOO.</p></li>
+</ul>
+<p>Selecciona "yes" para instalar con las opciones predeterminadas.</p>
+
+
+<br><br>
+
+
+<p><a href="../vrrl-es.html"><button>volver</button></a></p>
+<br>
+<br>
+
+</div></div>
+
+</body></html>

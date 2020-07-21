@@ -1,0 +1,19 @@
+#N canvas 254 164 450 300 12;
+#X declare -path abs_vrrl -lib aoo;
+#X obj 289 161 aoo-port 50000;
+#X obj 19 12 declare -path abs_vrrl -lib aoo;
+#N canvas 361 151 450 300 doc 0;
+#X obj 161 143 pdcontrol;
+#X msg 162 110 dir;
+#X msg 162 175 browse \$1/doc/vrrl-en.html;
+#X obj 160 207 pdcontrol;
+#X obj 164 77 inlet;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 4 0 1 0;
+#X restore 332 46 pd doc;
+#X obj 333 20 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 352 18 <-- help;
+#X connect 3 0 2 0;

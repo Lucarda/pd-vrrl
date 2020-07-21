@@ -1,0 +1,113 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+
+
+<meta content="text/html; charset=utf-8" http-equiv="content-type"><title>vrll</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+<div id="tuto"><div id="bla">
+
+<p>show in :<a href="vrrl-en.html"><button>English</button></a></p>
+
+<h1>vrrl</h1>
+
+<br>
+
+<br>
+<p>Virtual Rehearsing Room Lucarda. Un grupo de abstracciones en  <a href="http://puredata.info/" target=”_blank”:>Pd</a> para facilmente usar el <a href="https://git.iem.at/cm/aoo/-/tree/master" target=”_blank”>AOO</a>  external. </p>
+<p>Este proyecto esta en fase de testeo</p>
+<p>AOO apunta a compartir audio en alta calidad y baja latencia por internet o la red local.</p>
+<p><a href="installing-pd/guia-es.html" >Click-aqui</a> para una guia de instalacion de Pd y AOO en tu sistema.</p>
+<p><a href="http://lucarda.com.ar/vrrl/vrrl.zip">Click-aqui</a> para descargar vrrl.</p>
+<p>Cuandoo hallas instalado todo inicia Pd y abri el archivo <code>vrrl.pd</code></p>
+<p>Mas adelante <a href="pf-es.html">click-aqui</a> para leer como hacer <b>port-forward</b> en tu router si hay problemas de conexion.</p>
+<br>
+<hr>
+<h4>Estableciendo tu puerto UDP:</h4>
+
+<ul>
+<li><p>Click en el menu <b>edit /edit mode</b></p>
+<img src="port-setting.png"></br></li>
+<li><p>Click en la caja [aoo-port 50000] y selecciona el numero 50000:</p>
+<img src="port-setting-b.png"></br></li>
+<li><p>Cambialo a cualquier numero entre 1025-65000 y clickea en cualquier parte de la zona blanca por fuera de la cajita.</p>
+<img src="port-setting-c.png"></br></li>
+<li><p>Click en el menu <b>edit /edit mode</b> y des-selecciona edit mode.</p></li>
+<li><p>Click en el menu <b>file / save</b></p></li>
+<li><p>Click en la cajita [aoo-port xxxx] para abrir la ventana de controles.</p></li>
+
+</ul>
+
+<hr>
+<h4>Conectarse con otros usuarios:</h4>
+<img src="connect.png"></br>
+<ul>
+<li>
+<p>Click en la cajita [symbol] y tipea tu nombre de usuario y presiona ENTER. Este es el nombre que los demas usuarios usaran para identificarte.</p>
+	<ul>
+	<li><p>Hace lo mismo y crea un password para tu usuario.</p></li>
+	</ul>
+<li>
+<p>Unirse o crear un grupo</p>
+	<ul>
+	<li><p>Si no estas creando el grupo ingresa los datos del grupo al que te invitaron.</p></li>
+	</ul>
+</li>
+<li>
+<p>Click en el boton "connect".</p>
+	<ul>
+	<li><p>Si todo fue bien (ver la imagen) ya estas connectado con otros usuarios o creaste exitosamente un nuevo grupo.</p>
+	<img src="connect-ok.png"></br></li>
+	</ul>
+</li>
+</ul>
+
+<p>El servidor AOO al que estas conectado tiene los datos de las otras computadoras en el grupo y los usa para que las computadoras se conecten entre si. El audio que envias y recibis no pasa por el servidor AOO. </p>
+
+<p>Vas a tener una lista con los otros usuarios conectados. La lista se actualiza cuando alguien entra o sale del grupo:</p>
+</br>
+<img src="connect-users.png"></br></br>
+
+
+<hr>
+<h4>Abrir el audio de otros usuarios:</h4>
+<p>Click en la cajita [symbol] y tipea el nombre de usuario y apreta ENTER. Este canal esta ahora recibiendo audio de ese usuario.</p>
+<img src="user-mix.png"></br>
+<p>Podes seleccionar cual de los 4 canales posibles de ese usuario.</p>
+<img src="user-mix-ch.png"></br>
+
+<p>Controles basicos:</p>
+<img src="user-mix-ch-am.png"></br>
+<ul>
+<li><p><b>A: </b>Volumen</p></li>
+<li><p><b>B: </b>Paneo (izquierda-derecha)</p></li>
+<li><p><b>C: </b>on/off (mute/un-mute) (connect/disconnect)</p></li>
+</ul>
+
+<hr>
+<h4>Enviar audio a los otros usuarios:</h4>
+<p>Estos 4 canales coinciden con los canales de entrada de tu placa de sonido.</p>
+<img src="send-ch.png"></br>
+<ul>
+<li><p><b>A: </b>Start(on)/Stop(off) streaming a los otros usuarios. </p></li>
+<li><p><b>B: </b>Gain. Ajusta el volumen de lo que estas enviando a los demas y tambien lo que escuchas de vos mismo (si estas monitoreando tu señal)</p></li>
+<li><p><b>C: </b>Vumetro. Para verificar que tu señal no exceda los <b>-0dB</b></p></li>
+<li><p><b>D: </b>Ajustes de calidad del streaming.</p></p></li>
+</ul>
+
+<br><br><br><br><br><br><br><br>
+
+
+<br>
+<br>
+
+</div></div>
+</div>
+
+</body></html>

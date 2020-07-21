@@ -1,0 +1,113 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+
+
+<meta content="text/html; charset=utf-8" http-equiv="content-type"><title>vrll</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+<div id="tuto"><div id="bla">
+
+<p>mostrar en :<a href="vrrl-es.html"><button>Español</button></a></p>
+
+<h1>vrrl</h1>
+
+<br>
+
+<br>
+<p>Virtual Rehearsing Room Lucarda. A set of <a href="http://puredata.info/" target=”_blank”:>Pd</a> abstractions to easily interface the <a href="https://git.iem.at/cm/aoo/-/tree/master" target=”_blank”>AOO</a>  external. </p>
+<p>This project is in beta testing status.</p>
+<p>AOO aims to share high quality audio with low latency over the internet or your LAN.</p>
+<p><a href="installing-pd/guia-en.html" >Click-here</a> for a guide on installing Pd and AOO to your system.</p>
+<p><a href="http://lucarda.com.ar/vrrl/vrrl.zip">Click-here</a> to download vrrl.</p>
+<p>Once your done with the above start Pd and open the <code>vrrl.pd</code> file</p>
+<p>Later <a href="pf-en.html">click-here</a> to read about how to <b>port-forward</b> your router in case connection is not possible.</p>
+<br>
+<hr>
+<h4>Setting your UDP port:</h4>
+
+<ul>
+<li><p>Click on menu <b>edit /edit mode</b></p>
+<img src="port-setting.png"></br></li>
+<li><p>Click on the box [aoo-port 50000] and select the 50000 number:</p>
+<img src="port-setting-b.png"></br></li>
+<li><p>Change it to any number between 1025-65000 and click anywhere outside the box in the white space.</p>
+<img src="port-setting-c.png"></br></li>
+<li><p>Click on menu <b>edit /edit mode</b> and unselect edit mode.</p></li>
+<li><p>Click on menu <b>file / save</b></p></li>
+<li><p>Click on the box [aoo-port xxxx] to open the controls window.</p></li>
+
+</ul>
+
+<hr>
+<h4>Connect with other users:</h4>
+<img src="connect.png"></br>
+<ul>
+<li>
+<p>Click on the box [symbol] and type your user name and hit ENTER. This will be the name that others in the group will use to identify yourself.</p>
+	<ul>
+	<li><p>Do the same and create a password for your user.</p></li>
+	</ul>
+<li>
+<p>Join or create a group.</p>
+	<ul>
+	<li><p>If you are not creating the group provide the group/pass that were given to you.</p></li>
+	</ul>
+</li>
+<li>
+<p>Click on "connect" button.</p>
+	<ul>
+	<li><p>If everything went good (see pic) you are now connected with other users in the group or you successfully created a new group.</p>
+	<img src="connect-ok.png"></br></li>
+	</ul>
+</li>
+</ul>
+
+<p>The AOO server that you are connected keeps track of all computers in the group so that they can connect each other. The audio that you send or receive does not travel throw the AOO server. </p>
+
+<p>You will get a list of the connected users in your group. It gets updated when someone joins or leaves the group:</p>
+</br>
+<img src="connect-users.png"></br></br>
+
+
+<hr>
+<h4>Open audio from other users in your mixer:</h4>
+<p>Click on the box [symbol] and type the name of the user and hit ENTER. This channel is now listening audio from that user.</p>
+<img src="user-mix.png"></br>
+<p>Now you can get any of the 4 possible audio channels from that user.</p>
+<img src="user-mix-ch.png"></br>
+
+<p>These are the basic controls:</p>
+<img src="user-mix-ch-am.png"></br>
+<ul>
+<li><p><b>A: </b>Volume</p></li>
+<li><p><b>B: </b>Panning (left-right)</p></li>
+<li><p><b>C: </b>on/off (mute/un-mute) (connect/disconnect)</p></li>
+</ul>
+
+<hr>
+<h4>Send audio to other users:</h4>
+<p>These 4 channels matches your soundcard input channels.</p>
+<img src="send-ch.png"></br>
+<ul>
+<li><p><b>A: </b>Start(on)/Stop(off) streaming to other users. </p></li>
+<li><p><b>B: </b>Gain. Here you select the level of what you are sending to the others and also what you hear from yoursef (in case you are monitoring your input)</p></li>
+<li><p><b>C: </b>Vumeter. Normally here you should check that the signal does not go above <b>-0dB</b></p></li>
+<li><p><b>D: </b>Streaming quality settings.</p></p></li>
+</ul>
+
+<br><br><br><br><br><br><br><br>
+
+
+<br>
+<br>
+
+</div></div>
+</div>
+
+</body></html>

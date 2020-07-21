@@ -1,0 +1,167 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+
+
+<meta content="text/html; charset=utf-8" http-equiv="content-type"><title>Guia</title>
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+
+</head>
+
+<body>
+
+<div id="tuto"><div id="bla">
+
+<p><a href="../vrrl-en.html"><button>back</button></a></p>
+
+<h1>Installing Pd and AOO.</h1>
+
+<br>
+<br>
+<p>
+
+
+
+
+<h4>Get Pd</h4>
+
+
+
+<p>Pure-Data is free software (and open source) and it can be installed on Windows, macOS and Linux.
+</p><br><br>
+
+<h4>Windows:</h4> 
+<p>Download the <code>Installer for Microsoft Windows, 64 bit executable</code> from <a href="http://puredata.info/downloads/pure-data" target="_blank">http://puredata.info/downloads/pure-data.</a>
+<br><br> 
+Run the installer.<br> <br> 
+When finished run Pd.<br><br> 
+On first run the firewall will ask you access permission. Allow access to Private and Public networks.<br><br>
+<img src="firewall.png"> </br></br>
+The first time you run Pd you will be asked to create a documents/pd folder. Accept. <br><br>
+Go to <a href=#ps>Sound Test</a> <br><br> 
+Go to <a href=#aoo>get aoo</a><br><br> 
+<br></p>
+<h4>macOS:</h4> 
+<p>Download <code>Intel/64bit</code> from <a href="http://puredata.info/downloads/pure-data" target="_blank">http://puredata.info/downloads/pure-data.</a><br>
+Run it.<br><br>
+The first time you run Pd you will be asked to create a documents/pd folder. Accept. <br><br>
+
+Go to <a href=#ps>Sound Test</a> <br><br> 
+Go to <a href=#aoo>get aoo</a><br><br>
+<br></p>
+<h4>Linux:</h4><p> Download <code>Source tarball</code> from <a href="http://puredata.info/downloads/pure-data" target="_blank">http://puredata.info/downloads/pure-data.</a> 
+<br>
+<br>
+Open a Terminal and install dependencies:<br>
+Type:<br><br>
+<code>sudo apt-get install libasound2-dev tcl tk</code><br><br>
+When finished close the terminal. <br><br>
+Uncompress your downloaded Pd source.
+Navigate to the “src” folder. Open a terminal at the "src" folder.<br>
+Type to start compiling:<br><br>
+<code>make -f makefile.gnu</code><br><br>
+When finished do <code>cd ../bin</code> <br><br>
+Then do <code>./pd</code><br><br>
+The first time you run Pd you will be asked to create a documents/pd folder. Accept. <br><br>
+<br>
+Go to <a href=#ps>Sound Test</a> <br><br> 
+Go to <a href=#aoo>get aoo</a><br><br>
+</p>
+
+<br><br><br><br><br><br><br><br>
+<a id=ps></a><h4>Sound Test.</h4>
+
+
+<p>Make sure that your computer volume is not loud, preferably very soft (you are surely familiarized on how to control the computer level and probably your external speakers) normally a button near the clock with a speaker icon. Here some images on mac, windows and linux:<br></p>
+<br><br>
+<div style="text-align: center;"><img src="v2.jpg"><br></div>
+<br><br>
+<p>Run Pd and go to the menu <b>Media / Test Audio and MIDI...</b></p>
+<br><br>
+<div style="text-align: center;"><img  src="t1.jpg"></div>
+<br><br>
+<div style="text-align: center;">
+<h4>
+
+Take away the headphones from your ears!!! <br>
+Don't use headphones!!!<br><br>
+
+Take away the headphones from your ears!!!<br> 
+Don't use headphones!!!<br><br>
+
+Take away the headphones from your ears!!! <br>
+Don't use headphones!!!<br><br>
+
+
+<br>
+</h4>
+<br></div>
+
+
+
+<div style="text-align: center;"><img alt="" src="t2.jpg"></div>
+<br>
+<br>
+
+
+<p>Press the “80” button (in the “testtone.pd” window) and slowly increase the volume of your computer until you clearly hear a tone similar to the telephone before dialing. (if you use headphones, be careful when you are putting them back in your ears, I insist.)<br>
+
+Surely with this test you've heard the tone and you know how to adjust the volume when using vrrl. You can close the “testtone.pd” window.
+
+
+<br></p>
+
+
+<br>
+<br>
+<br>
+<br>
+<h4>Latency settings:</h4>
+<br>
+<p>You will need the lowest latency possible in your system. Around 8ms should be possible on most systems. </p>
+<p>Go to the menu <b> Media / Audio settings.</b> and change <b>Delay (msec)</b> to <b>8.</b> </p>
+
+<p>
+If you have more than one sound card select which one Pd will use.</p>
+
+<p>You can check if audio is ok by doing again menu <b>Media / Test Audio and MIDI...</b></p>
+<br>
+<h4>for Windows:</h4>
+<p>You surely need to use the ASIO driver. Go to the menu <b> Media / ASIO (via portaudio).</b><br></p><br>
+<div style="text-align: center;"><img  src="t3.jpg"></div>
+<br><p>
+Change the delay to 8ms,  block size to 64 and select the ASIO driver of your soundcard. Then press "Save All Settings".<br></p>
+
+<p>You can check if audio is ok by doing again menu <b>Media / Test Audio and MIDI...</b></p>
+<p>Note: You can use <a href="http://www.asio4all.org/" target="_blank">http://www.asio4all.org/</a> with your built in soundcard.</p>
+<p>
+On some Windows versions as “Home” or “Starter” you might not get sound or find other inconveniences. Before “giving up” try opening Pd with the “Run as Administrator” option.
+For this right-click on Pd's icon and select <b>"Run as Administrator".</b>
+
+</p>
+<br><br><br><br>
+
+<a id=aoo></a><h4>Get AOO</h4>
+
+<p>Go to menu <b>Help / Find externals</b></p>
+<img src="deken1.png"></br>
+<img src="deken2.png"></br>
+<ul>
+<li><p><b>A:</b> Type "aoo".</p></li>
+<li><p><b>B:</b> click on the "Search" button.</p></li>
+<li><p><b>C:</b> click on the latest "aoo" version available.</p></li>
+</ul>
+<p>Select "yes" to install with defaults settings.</p>
+
+
+<br><br>
+
+
+<p><a href="../vrrl-en.html"><button>back</button></a></p>
+<br>
+<br>
+
+</div></div>
+
+</body></html>
