@@ -15,22 +15,34 @@
 
 <p><a href="./vrrl-es.html"><button>volver</button></a></p>
 
-<h1>Port-forwarding</h1>
-</br>
-</br>
-</br>
+<h4>Port-forwarding:</h4>
+
 <p>
 
-Hay casos en los que es necesario abrir el puerto UDP en tu router. Tambien hay casos en los que eso no se puede hacer pero se pude usar una VPN
+Hay casos en los que es necesario abrir tu puerto vrrl UDP en tu router. Tambien hay casos en los que eso no se puede hacer pero se pude usar una VPN
 </p>
 
 <p>links sobre port-forwarding:</p>
 
 <p><a href="https://es.digitaltrends.com/computadoras/redireccion-de-puertos/" target=”_blank”>https://es.digitaltrends.com/computadoras/redireccion-de-puertos/</a></p>
 
-<p><a href="https://www.testdevelocidad.es/configuraciones/abrir-correctamente-los-puertos-router/" target=”_blank”>https://www.testdevelocidad.es/configuraciones/abrir-correctamente-los-puertos-router/</a></p>
-
 <h4>VPN:</h4>
+<hr>
+<p><b>Hamachi</b></p>
+
+<p>resumiendo: al menos un integrante del grupo tiene que crear una cuenta en <a href="https://www.vpn.net/" target=”_blank”> https://www.vpn.net </a> y crear una red “mesh” y todos los integrantes tienen que instalar el cliente en su maquina y unirse a esa red.</p>
+
+<p>Cualquiera de los integrantes (uno solo) debe crear un objeto [aoo_server 10102]. Este objeto puede tener cualquier otro puerto (entre 1025~65000) en lugar de 10102.</p>
+
+<p>Luego todos (inclusive quien creo el [aoo_server 10102]) deben conectarse al servidor aoo recien creado usando el “ip/hamachi” “numero de puerto” de la maquina en que fue creado el [aoo_server 10102]</p>
+
+<p>nota: los ip de hamachi suelen ser 25.x.x.x</p>
+<br>
+<img src="hamachi.png">
+
+<br><br>
+<hr>
+<p><b>OPENVPN</b></p>
 <p> 
 Si alguien del grupo tiene una maquina linux es bastante facil crear una 
 
@@ -38,7 +50,7 @@ Si alguien del grupo tiene una maquina linux es bastante facil crear una
 
 <p><a href="https://github.com/angristan/openvpn-install" target=”_blank”>https://github.com/angristan/openvpn-install</a></p>
 
-<p>que prepara un servidor <a href="https://openvpn.net/" target=”_blank”>OPENVPN</a> que puede ser usado por los que no puden hacer port-forwarding.</p> 
+<p>que prepara un servidor <a href="https://openvpn.net/" target=”_blank”>OPENVPN</a> que puede ser usado por los que no puden hacer port-forwarding o todos los integrantes del grupo.</p> 
 
 <br><br><br><br><br><br><br><br>
 
