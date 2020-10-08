@@ -15,10 +15,10 @@
 
 <p><a href="./vrrl-en.html"><button>back</button></a></p>
 
-<h1>Port-forwarding</h1>
-</br>
-</br>
-</br>
+<h4>Port-forwarding:</h4>
+
+
+
 <p>There are cases where you have to open your vrrl UDP port in your router. Thare are also cases where you can not do that but you can use a VPN.</p>
 
 <p>Some links that covers port-forwarding:</p>
@@ -26,11 +26,30 @@
 <p><a href="https://www.noip.com/support/knowledgebase/general-port-forwarding-guide/" target=”_blank”>https://www.noip.com/support/knowledgebase/general-port-forwarding-guide/</a></p>
 
 <h4>VPN:</h4>
+<hr>
+<p><b>Hamachi</b></p>
+
+
+<p>brief: at least one of the members of the group has to sign-up for an account (the free account is for 5 machines on the network) on <a href="https://www.vpn.net/" target=”_blank”> https://www.vpn.net </a> and create a "mesh" network. All members have to install a client to join that network.</p>
+
+<p>Any of the members (only one) must create an [aoo_server 10102] object. This object could have had any other port number in the range 1025-65000 instead of 10102.</p>
+
+<p>Then all members (including the one that created the [aoo_server 10102]) must connect to that server using the "hamachi/ip" "port number" of the machine that has created the [aoo_server 10102]</p>
+
+
+<p>note: hamachi ip's normally start 25.x.x.x</p>
+<br>
+<img src="hamachi.png">
+
+<br><br>
+<hr>
+
+<p><b>OPENVPN</b></p>
 <p>If someone in the group has a linux machine it should be easy to setup a <a href="https://en.wikipedia.org/wiki/Virtual_private_network" target=”_blank”> VPN</a> using this script:
 
 <p><a href="https://github.com/angristan/openvpn-install" target=”_blank”>https://github.com/angristan/openvpn-install</a></p>
 
-<p>that sets an <a href="https://openvpn.net/" target=”_blank”>OPENVPN</a> server that can be used by the ones that cant do port-forwarding.</p> 
+<p>that sets an <a href="https://openvpn.net/" target=”_blank”>OPENVPN</a> server that can be used by the ones that cant do port-forwarding or by all members of the group.</p> 
 
 <br><br><br><br><br><br><br><br>
 
