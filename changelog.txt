@@ -1,8 +1,15 @@
  ~~~~~  
+v0.1.1-test4
+
+- add sound-card output channels selection for the DAC.
+- clear "peerlist" when disconnect. 
+ 
+ 
+ ~~~~~  
 v0.1.1-test3
 
-- add OPUS output stream option
-
+- add OPUS output stream option.
+.
 
  ~~~~~ 
  v0.1.1-test2
